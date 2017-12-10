@@ -1,11 +1,5 @@
 const fs = require("fs");
-const path = require("path");
 
-const toolbox = require("devtools-launchpad/index");
-const feature = require("devtools-config");
-const getConfig = require("./getConfig");
-const express = require("express");
-const serve = require("express-static");
 
 const envConfig = getConfig();
 feature.setConfig(envConfig);
